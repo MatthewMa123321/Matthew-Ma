@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacts of Inflation on Basic Necessities in the UK</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: #555;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .decorative-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .authors {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .author {
+            text-align: center;
+            max-width: 45%;
+        }
+
+        .author img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('about');
+            const navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const sectionId = event.target.getAttribute('href').substring(1);
+                    showSection(sectionId);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Impacts of Inflation on Basic Necessities in the UK</h1>
+</header>
+
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#causes">Causes of Inflation</a>
+    <a href="#food">Food Prices</a>
+    <a href="#housing">Housing</a>
+    <a href="#transportation">Transportation</a>
+    <a href="#healthcare">Healthcare</a>
+    <a href="#education">Education</a>
+    <a href="#students">Effects on Students</a>
+    <a href="#coping">Coping Strategies</a>
+    <a href="#resources">Resources</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<div class="content">
+    <div id="about" class="section active">
+        <h2>About Us</h2>
+        <div class="authors">
+            <div class="author">
+                <img src="Silesia2.jpg" alt="Matthew Ma">
+                <h3>Matthew Ma</h3>
+                <p>A high school student from the ENP section at Ferney Voltaire with a keen interest in economics and social issues. Working on a CDM Project (Connaisance Du Monde), he hopes to spread awareness about the impacsts of inflation on students. Matthew also provides a fresh perspective on how inflation influences young people and families. He has conducted extensive research on the impacts of economic fluctuations on everyday life and has been active in community discussions on financial literacy.</p>
+            </div>
+            <div class="author">
+                <img src="mark.jpg" alt="Mark Banlieu">
+                <h3>Mark Banlieu</h3>
+                <p>An editor for Save the Students, a non-profit organizations, Mark has extensive experience in researching and writing about financial challenges faced by students and low-income households. He brings a wealth of knowledge and practical insights to our discussion, having authored several guides on managing finances during times of economic hardship.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="causes" class="section">
+        <h2>Causes of Inflation</h2>
+        <p>Inflation can be caused by a variety of factors, each contributing to the overall rise in prices that affects the economy. These causes can be broadly categorized into four main types:</p>
+        <ul>
+            <li><strong>Demand-Pull Inflation:</strong> This occurs when the demand for goods and services exceeds their supply. In a thriving economy, consumers and businesses are likely to spend more, increasing the demand for products. When production can't keep up with this increased demand, prices go up. For example, during economic recovery periods, people may spend more due to improved job security and income, leading to higher prices.</li>
+            <li><strong>Cost-Push Inflation:</strong> This happens when the costs of production increase, forcing producers to raise prices to maintain their profit margins. Various factors such as rising wages, increased prices for raw materials, or disruptions in the supply chain can contribute to cost-push inflation. A notable instance is when oil prices rise, leading to higher transportation and manufacturing costs, which in turn increases the prices of goods and services.</li>
+            <li><strong>Monetary Policy:</strong> Central banks, like the Bank of England, control the money supply and interest rates. If a central bank increases the money supply too rapidly in an effort to stimulate the economy, it can lead to inflation. This situation is often the result of quantitative easing measures, where the central bank buys government securities to inject money into the economy, which can sometimes lead to an excess of money chasing a limited number of goods.</li>
+            <li><strong>Exchange Rates:</strong> The value of a country's currency can affect its inflation rate. A depreciation of the currency makes imports more expensive, which can contribute to higher overall prices. For example, following Brexit, the pound sterling weakened, making imported goods more costly and thereby contributing to inflation in the UK.</li>
+        </ul>
+        <img src="causes_of_inflation.jpg" alt="Causes of Inflation Image" class="decorative-image">
+    </div>
+
+    <div id="food" class="section">
+        <h2>Food Prices</h2>
+        <p>Inflation directly impacts the cost of food, making it harder for families to afford nutritious meals. Here are some key points regarding food price inflation:</p>
+        <ul>
+            <li><strong>Increased Prices for Staples:</strong> Basic food items such as bread, milk, and vegetables have seen significant price increases. For instance, the price of a loaf of bread has risen by 10% over the past year. This increase in staple food prices affects all households, but particularly those with lower incomes who spend a higher proportion of their income on food.</li>
+            <li><strong>Import Costs and Supply Chain Disruptions:</strong> Global supply chain issues and import costs have a direct impact on food prices. Events such as Brexit have added complexity and cost to the import process, causing delays and higher prices. These disruptions can lead to shortages of certain products, further driving up prices.</li>
+            <li><strong>Effects on Low-Income Households and Food Banks:</strong> Food banks have reported a 20% increase in demand as more families struggle to afford food. This increased reliance on food banks indicates that many households are unable to cope with rising food costs, leading to greater food insecurity and reliance on charity for basic nutrition.</li>
+        </ul>
+        <img src="food_prices.jpg" alt="Food Prices Image" class="decorative-image">
+    </div>
+
+    <div id="housing" class="section">
+        <h2>Housing Market Pressures</h2>
+        <p>Housing is one of the most significantly affected areas by inflation. The rising cost of housing impacts both renters and home buyers:</p>
+        <ul>
+            <li><strong>Rising Rental Prices:</strong> Rental prices have increased significantly, particularly in major cities. The average rent has risen by 8% over the past year, putting additional financial strain on tenants. This increase is driven by higher demand for rental properties, as potential home buyers are priced out of the market.</li>
+            <li><strong>Increasing Mortgage Rates and Home Prices:</strong> Inflation often leads to higher interest rates as central banks attempt to control it. Higher interest rates make mortgages more expensive, reducing the affordability of buying a home. Additionally, home prices have surged by 15% in the last two years, further exacerbating the challenge of home ownership for many.</li>
+            <li><strong>Challenge of Finding Affordable Housing:</strong> Many first-time buyers and low-income families are finding it increasingly difficult to find affordable housing. The combination of rising home prices and higher mortgage rates has made it nearly impossible for some to enter the housing market, leading to a greater reliance on rental properties and, in some cases, increased homelessness.</li>
+        </ul>
+        <img src="housing.jpg" alt="Housing Market Pressures Image" class="decorative-image">
+    </div>
+
+    <div id="transportation" class="section">
+        <h2>Transportation Costs on the Rise</h2>
+        <p>Transportation costs are another area significantly impacted by inflation, affecting both daily commutes and travel:</p>
+        <ul>
+            <li><strong>Higher Fuel Prices:</strong> The cost of fuel has hit record highs, increasing by 25% in the past year. This rise in fuel prices affects everyone, from daily commuters to logistics companies. Higher transportation costs can lead to increased prices for goods and services, as businesses pass on these additional costs to consumers.</li>
+            <li><strong>Increased Public Transport Fares:</strong> Bus and train fares have also risen by an average of 7%, making commuting more expensive for those who rely on public transportation. This increase can disproportionately affect low-income individuals who depend on public transport to get to work or school.</li>
+            <li><strong>Overall Effect on Cost of Living:</strong> The rise in transportation costs contributes to the overall increase in the cost of living. As transportation becomes more expensive, it adds to the financial burden on households, reducing disposable income and increasing the strain on family budgets.</li>
+        </ul>
+        <img src="transportation.jpg" alt="Transportation Costs Image" class="decorative-image">
+    </div>
+
+    <div id="healthcare" class="section">
+        <h2>Healthcare Affordability</h2>
+        <p>Inflation affects healthcare costs, impacting accessibility and affordability for many families:</p>
+        <ul>
+            <li><strong>Price of Medical Supplies and Services:</strong> The cost of prescription drugs has increased by 12%, and the prices of medical equipment and services have also risen. This makes it more expensive for individuals to access necessary healthcare, leading to potential delays in treatment and worsening health outcomes.</li>
+            <li><strong>Access to Affordable Healthcare:</strong> Low-income families are particularly affected by rising healthcare costs. Many are finding it difficult to afford necessary medical treatments, leading to increased health disparities and poorer health outcomes for those unable to pay for care.</li>
+            <li><strong>Impact on Health Insurance Premiums:</strong> Health insurance premiums have increased by an average of 5%, adding to the financial burden on households. Higher premiums mean that even those with insurance are paying more out-of-pocket, which can lead to reduced access to necessary healthcare services.</li>
+        </ul>
+        <img src="healthcare.jpg" alt="Healthcare Image" class="decorative-image">
+    </div>
+
+    <div id="education" class="section">
+        <h2>Education Expenses</h2>
+        <p>Education is not immune to inflation, with rising costs impacting students and their families in several ways:</p>
+        <ul>
+            <li><strong>Tuition Fee Increases and Student Loans:</strong> Universities have raised tuition fees by 3%, and student loan interest rates have also gone up. This makes higher education more expensive and increases the debt burden on students who rely on loans to finance their education.</li>
+            <li><strong>Higher Costs for Educational Materials:</strong> The prices of textbooks, digital resources, and school supplies have increased by 15%. These rising costs add to the financial strain on students and their families, making it more challenging to afford necessary materials for their studies.</li>
+            <li><strong>Overall Financial Strain:</strong> The combination of higher tuition fees, increased costs for materials, and rising living expenses puts significant financial pressure on families. Many parents and students are finding it increasingly difficult to manage educational expenses without accruing significant debt, leading to long-term financial challenges.</li>
+        </ul>
+        <img src="education.jpg" alt="Education Expenses Image" class="decorative-image">
+    </div>
+
+    <div id="students" class="section">
+        <h2>Effects on Students</h2>
+        <p>Inflation's impact on students is profound, affecting various aspects of their lives. Here are some detailed explanations of how inflation affects students:</p>
+        <ul>
+            <li><strong>Mental Health:</strong> The stress of financial instability can lead to anxiety, depression, and other mental health issues among students. The rising cost of living and tuition fees contribute to financial stress, which can affect students' mental well-being. Studies show a 25% increase in students seeking counseling services for financial stress, highlighting the significant impact of economic pressures on mental health.</li>
+            <li><strong>Diet:</strong> Rising food costs often force students to choose cheaper, less nutritious options, affecting their overall health and academic performance. Students may resort to eating more processed foods or skipping meals to save money, which can lead to nutritional deficiencies and health problems. Poor diet and nutrition can also negatively impact concentration, energy levels, and academic success.</li>
+            <li><strong>Stress Levels:</strong> Balancing work and study becomes harder as students take on more part-time jobs to afford their living and educational expenses. This additional workload can lead to increased stress and burnout, as students struggle to manage their academic responsibilities alongside their financial obligations.</li>
+            <li><strong>Grades:</strong> Financial stress and the need to work more hours can lead to decreased academic performance. Data indicates a correlation between increased work hours and lower GPA among students. When students have to prioritize work over studying, it can result in lower grades and reduced opportunities for future career advancement.</li>
+            <li><strong>Less Time for Extracurricular Activities:</strong> The need to work more hours reduces time available for extracurricular activities, affecting students' holistic development and future opportunities. Participation in extracurricular activities is essential for building skills, networking, and enhancing resumes, but financial pressures can limit students' ability to engage in these important experiences.</li>
+        </ul>
+        <img src="students.jpg" alt="Effects on Students Image" class="decorative-image">
+    </div>
+
+    <div id="coping" class="section">
+        <h2>Coping Strategies</h2>
+        <p>To manage the impact of inflation, individuals and families can adopt various strategies. Here are some detailed coping mechanisms:</p>
+        <ul>
+            <li><strong>Budgeting:</strong> Creating a detailed budget to track income and expenses can help manage financial resources more effectively. By identifying areas where money can be saved, individuals can allocate funds more efficiently to cover essential costs such as food, housing, and healthcare. Budgeting tools and apps can be helpful in maintaining financial discipline.</li>
+            <li><strong>Reducing Non-Essential Spending:</strong> Cutting back on non-essential expenses can free up funds for necessities. This might include reducing spending on entertainment, dining out, and luxury items. Prioritizing needs over wants can help households manage their finances better during periods of high inflation.</li>
+            <li><strong>Seeking Financial Aid:</strong> Exploring options for financial aid, scholarships, and grants can provide much-needed support, especially for students. Many educational institutions and organizations offer financial assistance to help students cover tuition and living expenses, alleviating some of the financial burdens.</li>
+            <li><strong>Using Public Resources:</strong> Utilizing food banks, community programs, and government assistance can help alleviate some financial pressure. These resources can provide essential support for families struggling to afford basic necessities during times of economic hardship.</li>
+            <li><strong>Investing in Skills and Education:</strong> Pursuing additional education or skills training can improve job prospects and earning potential in the long run. By enhancing their qualifications, individuals can increase their chances of securing higher-paying jobs, which can help offset the impact of inflation on their finances.</li>
+        </ul>
+        <img src="coping.jpg" alt="Coping Strategies Image" class="decorative-image">
+    </div>
+
+    <div id="resources" class="section">
+        <h2>Resources</h2>
+        <p>Here are some resources for further reading and assistance:</p>
+        <ul>
+            <li><a href="https://www.moneyadviceservice.org.uk/en/articles/ways-to-save-money-on-food-shopping">Money Advice Service: Saving on Food Shopping</a></li>
+            <li><a href="https://www.citizensadvice.org.uk/debt-and-money/help-with-your-debts/">Citizens Advice: Help with Your Debts</a></li>
+            <li><a href="https://www.nhs.uk/mental-health/advice-for-life-situations-and-events/how-to-cope-with-money-worries/">NHS: Coping with Money Worries</a></li>
+            <li><a href="https://www.universitiesuk.ac.uk/universities-uk-international">Save The Students 2023</a></li>
+        </ul>
+        <img src="resources.jpg" alt="Resources Image" class="decorative-image">
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need further information, please contact us:</p>
+        <ul>
+            <li>Email: <a href="matthew.ma767800@gmail.com">matthew.ma767800@gmail.com</a></li>
+            <li>Phone: +33 787072401 or  021 8191 8511</li>
+            <li>Address: 4th Floor Silverstream House, 45 Fitzroy Street, Fitzrovia, London W1T 6EB</li>
+        </ul>
+        <img src="contact.jpg" alt="Contact Us Image" class="decorative-image">
+    </div>
+</div>
+
+<footer>
+    <div>&copy; 2024 Impacts of Inflation</div>
+</footer>
+
+</body>
+</html>
